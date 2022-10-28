@@ -1,0 +1,113 @@
+.token {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-top: 200px;
+  max-width: var(--max-width);
+  padding-inline: 20px;
+}
+.token > h1 {
+  font-weight: 600;
+  font-size: 89px;
+  text-align: left;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+.token .token-div:first-of-type {
+  align-self: flex-end;
+  margin-top: 100px;
+  justify-self: flex-end;
+}
+.token .token-div:last-of-type {
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: -140px;
+}
+.token .token-div:last-of-type img {
+  align-self: flex-start;
+  padding-left: 20px;
+}
+.token-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.token-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.token-row h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+}
+.token-row p {
+  color: white;
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 24px;
+}
+.token-div img {
+  align-self: center;
+}
+.mobile-img {
+  display: none;
+}
+.desktop-img {
+  display: block;
+}
+@media screen and (max-width: 965px) {
+  .mobile-img {
+    display: block;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .token .token-div:first-of-type {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    align-items: flex-end;
+
+    text-align: right;
+    margin-top: 250px;
+  }
+  .token .token-div:last-of-type {
+    flex-direction: column-reverse;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 50px;
+  }
+  .token-div:first-of-type .token-row {
+    align-items: flex-end;
+  }
+  .token > h1 {
+    font-size: 32px;
+  }
+  .token-row h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .token-row p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .token {
+    margin-top: 70px;
+  }
+  .token-div:first-of-type img {
+    margin-bottom: 50px;
+    order: 1;
+  }
+  .token-div:first-of-type .token-row {
+    order: 2;
+  }
+  .token .token-div:last-of-type img {
+    padding: 0px;
+  }
+}
