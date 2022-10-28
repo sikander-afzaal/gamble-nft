@@ -96,9 +96,9 @@
 }
 .svg {
   position: absolute;
-  bottom: 70%;
-  left: 50%;
-  width: 76%;
+  bottom: 52%;
+  left: 55%;
+  width: 78%;
   z-index: 30;
   transform: translateX(-50%);
 }
