@@ -27,7 +27,7 @@ const Works = () => {
         <div className="work-text">
           <div className="long-line"></div>
           <h1>4.</h1>
-          <p>You wina1 ticket for each token sent to the pot.</p>
+          <p>You win 1 ticket for each token sent to the pot.</p>
         </div>
       </div>
       <h1 className="head head-gr">
