@@ -11,7 +11,7 @@ header {
   align-items: center;
   width: 100%;
   max-width: var(--max-width);
-  padding: 40px 20px;
+  padding: 15px 20px;
 }
 .left-header,
 .left-header nav {
@@ -33,7 +33,9 @@ header {
   color: white;
   opacity: 0.7;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
   text-decoration: none;
 }
 .active-link {

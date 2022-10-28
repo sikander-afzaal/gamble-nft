@@ -2,7 +2,7 @@ import "./styles/Token.css";
 
 const Token = () => {
   return (
-    <div className="token">
+    <div id="token" className="token">
       <h1 className="head head-gr">
         Token <br /> economics
       </h1>

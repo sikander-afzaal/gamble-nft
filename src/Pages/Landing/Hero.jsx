@@ -13,7 +13,7 @@ const Hero = () => {
       scrollTrigger: {
         trigger: path.current,
         scrub: 2,
-        start: "top top",
+        start: "top 15%",
         end: "bottom bottom",
         // markers: true,
       },
@@ -31,7 +31,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <div className="container hero-cont">
+    <div id="hero" className="container hero-cont">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="svg-mob"

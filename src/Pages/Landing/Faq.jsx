@@ -14,7 +14,7 @@ const Faq = () => {
       scrollTrigger: {
         trigger: path.current,
         scrub: 2,
-        start: "top top",
+        start: "top 15%",
         end: "bottom bottom",
         // markers: true,
       },
@@ -32,7 +32,7 @@ const Faq = () => {
     });
   }, []);
   return (
-    <div className="container faq-cont">
+    <div id="faq" className="container faq-cont">
       <img src="/cube.png" className="cube" alt="" />
       <div className="faq">
         <h1 className="head head-gr">FAQ</h1>

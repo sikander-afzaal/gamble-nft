@@ -1,6 +1,7 @@
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import "./Header.css";
 
 const Header = () => {
@@ -19,34 +20,55 @@ const Header = () => {
         <div className="left-header">
           <img src="/logo.svg" alt="" />
           <nav className={headerToggle ? "open-header" : ""}>
-            <a
+            <Link
               onClick={() => setHeaderToggle(false)}
-              href="#"
-              className="nav-links active-link"
+              to="hero"
+              activeClass="active-link"
+              className="nav-links"
+              spy={true}
+              hashSpy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
             >
               Overview
-            </a>
-            <a
+            </Link>
+            <Link
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              to="token"
               className="nav-links"
+              activeClass="active-link"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
             >
               Token economics
-            </a>
-            <a
+            </Link>
+            <Link
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              to="works"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
               className="nav-links"
+              activeClass="active-link"
             >
               Features
-            </a>
-            <a
+            </Link>
+            <Link
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              to="faq"
+              spy={true}
+              offset={50}
+              duration={500}
+              smooth={true}
               className="nav-links"
+              activeClass="active-link"
             >
               F.A.Q
-            </a>
+            </Link>
             <div className="btn-div mobile-btn">
               <button className="inverse gradient-text">Buy MTG</button>
               <button className="cta-btn">

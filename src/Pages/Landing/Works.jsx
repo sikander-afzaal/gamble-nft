@@ -2,7 +2,7 @@ import "./styles/Works.css";
 
 const Works = () => {
   return (
-    <div className="works">
+    <div id="works" className="works">
       <div className="left-works">
         <div className="work-text">
           <div className="left-line"></div>

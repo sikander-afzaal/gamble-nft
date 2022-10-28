@@ -20,7 +20,7 @@
   padding-bottom: 160px;
 }
 .faq > h1 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 89px;
   margin-bottom: 0px;
 }
@@ -107,7 +107,18 @@
     min-width: initial;
   }
 }
-@media screen and (max-width: 1122px) {
+@media screen and (max-width: 1263px) {
+  .svg {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .coin,
+  .svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
   .faq-box img {
     display: none;
   }
@@ -122,10 +133,6 @@
     align-self: initial !important;
   }
 
-  .coin,
-  .svg {
-    display: none;
-  }
   .faq-grid {
     display: flex;
     justify-content: flex-start;
