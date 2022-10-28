@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import Playing from "./Playing";
 import "./styles/Landing.css";
 import Token from "./Token";
 import Works from "./Works";
@@ -9,6 +10,7 @@ const Landing = () => {
       <Hero />
       <Token />
       <Works />
+      <Playing />
     </div>
   );
 };
