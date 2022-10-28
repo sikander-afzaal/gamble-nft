@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: transparent;
+  background: var(--body-gradient);
   z-index: 46;
 }
 header {
@@ -53,6 +53,9 @@ header {
   display: none;
 }
 @media screen and (max-width: 1200px) {
+  header {
+    padding: 20px;
+  }
   .overlay {
     position: fixed;
     top: 0;
