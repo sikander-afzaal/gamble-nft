@@ -35,10 +35,12 @@ const Hero = () => {
   return (
     <div id="hero" className="container hero-cont">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
+        width="254"
+        height="2383"
+        viewBox="0 0 254 2383"
+        fill="none"
         className="svg-mob"
-        viewBox="0 0 980.51 4149.01"
-        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           ref={path}
