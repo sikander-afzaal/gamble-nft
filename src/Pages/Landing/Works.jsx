@@ -3,20 +3,24 @@ import { gsap, ScrollTrigger } from "gsap/all";
 import { useLayoutEffect, useRef } from "react";
 const Works = () => {
   const section = useRef();
+  const head1 = useRef();
+  const head2 = useRef();
+  const left = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to(section.current, {
+    gsap.to([left.current, head1.current, head2.current], {
       scrollTrigger: {
         trigger: section.current,
         start: "top 50%",
       },
+      x: 0,
       opacity: 1,
-      duration: 2,
+      stagger: 0.5,
     });
   }, []);
   return (
     <div ref={section} id="works" className="works">
-      <div className="left-works">
+      <div ref={left} className="left-works">
         <div className="work-text">
           <div className="left-line"></div>
           <div className="bottom-line"></div>
@@ -43,9 +47,14 @@ const Works = () => {
           <p>You win 1 ticket for each token sent to the pot.</p>
         </div>
       </div>
-      <h1 className="head head-gr">
-        How does it <br /> works?
-      </h1>
+      <div className="flex-col-head">
+        <h1 ref={head1} className="head head-gr">
+          How does it
+        </h1>
+        <h1 ref={head2} className="head head-gr">
+          works?
+        </h1>
+      </div>
     </div>
   );
 };

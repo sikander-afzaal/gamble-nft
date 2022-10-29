@@ -34,12 +34,19 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
 }
-.hero h1 {
+.left-hero > h1 {
+  max-width: 800px;
   font-weight: 500;
   font-size: 62px;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   margin-bottom: 55px;
+  font-family: "Neue", sans-serif;
 }
 .hero > img {
   width: 400px;
@@ -84,7 +91,7 @@
   .left-hero {
     width: 100%;
   }
-  .left-hero h1 {
+  .left-hero > h1 {
     text-align: left;
     font-size: 44px;
     margin-bottom: 30px;
@@ -147,7 +154,7 @@
     right: initial;
     top: 30%;
   }
-  .left-hero h1 {
+  .left-hero > h1 {
     font-size: 24px;
   }
   .hero > img {

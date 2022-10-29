@@ -6,16 +6,16 @@ const Faq = () => {
   const path = useRef();
   const coin = useRef();
   const section = useRef();
+  const head = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
-    gsap.to(section.current, {
+    gsap.to(head.current, {
       scrollTrigger: {
         trigger: section.current,
         start: "top 50%",
-        markers: true,
       },
       opacity: 1,
-      duration: 2,
+      y: 0,
     });
     var myAnim = gsap.timeline({
       defaults: { duration: 2 },
@@ -43,7 +43,9 @@ const Faq = () => {
     <div ref={section} id="faq" className="container faq-cont">
       <img src="/cube.png" className="cube" alt="" />
       <div className="faq">
-        <h1 className="head head-gr">FAQ</h1>
+        <h1 ref={head} className="head head-gr">
+          FAQ
+        </h1>
         <div className="faq-grid">
           <div className="faq-box right-box">
             <h2>Can I change my plan later?</h2>

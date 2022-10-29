@@ -1,7 +1,10 @@
 import "./styles/Hero.css";
 import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
 import { useLayoutEffect, useRef } from "react";
+import { TypeAnimation } from "react-type-animation";
+
 const Hero = () => {
+  const TYPED__HEADING = `World's first net deflationary & highly profitable move to earn coin!`;
   const path = useRef();
   const coin = useRef();
   // const wrapper = useRef();
@@ -56,10 +59,17 @@ const Hero = () => {
       <img src="/hero-main.png" className="center-hero" alt="" />
       <div className="hero">
         <div className="left-hero">
-          <h1 className="head head-gr">
-            World's first net deflationary & highly profitable move to earn
-            coin!
-          </h1>
+          <TypeAnimation
+            sequence={[
+              TYPED__HEADING, // Types 'One'
+              1000,
+            ]}
+            wrapper="h1"
+            cursor={true}
+            repeat={0}
+            speed={20}
+          />
+          <h1 className="head head-gr"></h1>
           <div className="btn-div">
             <button className="cta-btn">Get Start</button>
             <button className="inverse gradient-text">Buy MTG</button>

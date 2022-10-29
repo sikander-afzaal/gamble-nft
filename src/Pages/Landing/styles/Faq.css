@@ -26,6 +26,9 @@
   position: relative;
   z-index: 30;
   margin-bottom: 0px;
+  display: inline-block;
+  transform: translateY(-30px);
+  opacity: 0;
 }
 .faq-grid {
   display: grid;

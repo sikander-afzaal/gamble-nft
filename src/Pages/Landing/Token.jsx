@@ -3,24 +3,34 @@ import "./styles/Token.css";
 import { gsap, ScrollTrigger } from "gsap/all";
 
 const Token = () => {
+  const head1 = useRef();
+  const head2 = useRef();
+  const first = useRef();
+  const last = useRef();
   const section = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to(section.current, {
+    gsap.to([head1.current, head2.current, first.current, last.current], {
       scrollTrigger: {
         trigger: section.current,
         start: "top 40%",
       },
       opacity: 1,
-      duration: 2,
+      x: 0,
+      stagger: 0.5,
     });
   }, []);
   return (
     <div ref={section} id="token" className="token">
-      <h1 className="head head-gr">
-        Token <br /> economics
-      </h1>
-      <div className="token-div">
+      <div className="flex-col-head">
+        <h1 className="head head-gr" ref={head1}>
+          Token
+        </h1>{" "}
+        <h1 className="head head-gr" ref={head2}>
+          economics
+        </h1>
+      </div>
+      <div ref={first} className="token-div first">
         <div className="token-row">
           <h2>1,000,000,000</h2>
           <p>Total Supply</p>
@@ -40,7 +50,7 @@ const Token = () => {
         <img src="/left-arrow.png" className="desktop-img" alt="" />
         <img src="/mob-left.png" alt="" className="mobile-img" />
       </div>
-      <div className="token-div">
+      <div ref={last} className="token-div">
         <img src="/right-arrow.png" className="desktop-img" alt="" />
         <img src="/mob-right.png" alt="" className="mobile-img" />
         <div className="token-row">
