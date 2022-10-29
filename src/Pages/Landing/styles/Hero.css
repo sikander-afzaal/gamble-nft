@@ -135,22 +135,27 @@
 }
 @media screen and (max-width: 1100px) {
   .svg-mob {
-    height: 5400px;
+    height: 5200px;
   }
 }
 @media screen and (max-width: 965px) {
   .svg-mob {
-    height: 4800px;
+    height: 4400px;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 670px) {
   .svg-mob {
     height: 4350px;
   }
 }
+@media screen and (max-width: 555px) {
+  .svg-mob {
+    height: 3900px;
+  }
+}
 @media screen and (max-width: 500px) {
   .svg-mob {
-    height: 4150px;
+    height: 3600px;
     left: 20% !important;
     width: 100% !important;
   }
@@ -160,7 +165,11 @@
     left: 50%;
     transform: translateX(-50%);
     right: initial;
-    top: 30%;
+    top: 13%;
+    max-width: 85%;
+  }
+  .left-hero-img {
+    top: 3%;
   }
   .hero {
     padding-top: 140px;
