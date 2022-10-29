@@ -150,12 +150,12 @@
   }
   .faq-box {
     margin: 0px !important;
-    min-width: 290px !important;
+    min-width: 300px !important;
     min-width: initial;
     padding: 12px 24px;
     gap: 10px;
-    width: 290px;
-    height: 134px;
+    width: 300px;
+    height: 144px;
     align-self: initial !important;
   }
 

@@ -37,6 +37,9 @@
 .head {
   font-family: "Neue", sans-serif;
 }
+.App {
+  overflow-x: hidden;
+}
 body {
   background: var(--body-gradient);
   min-height: 100vh;
