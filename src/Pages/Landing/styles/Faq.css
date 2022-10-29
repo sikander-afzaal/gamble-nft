@@ -1,5 +1,6 @@
 .faq-cont {
   position: relative;
+  z-index: 29;
   isolation: isolate;
 }
 .cube {
@@ -22,6 +23,8 @@
 .faq > h1 {
   font-weight: 500;
   font-size: 89px;
+  position: relative;
+  z-index: 30;
   margin-bottom: 0px;
 }
 .faq-grid {
@@ -69,19 +72,19 @@
   grid-column: 3/4;
   align-self: center;
   grid-row: 1/2;
-  margin-top: 60px;
+  margin-bottom: 00px;
 }
 .faq-box:nth-of-type(3) {
   grid-column: 1/2;
   grid-row: 2/3;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   align-self: flex-end;
 }
 .faq-box:nth-of-type(4) {
   grid-column: 3/4;
   align-self: center;
   grid-row: 2/3;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 .left-box img {
   right: 100%;
@@ -96,7 +99,7 @@
 }
 .svg {
   position: absolute;
-  bottom: 52%;
+  bottom: 56%;
   left: 55%;
   width: 78%;
   z-index: 30;
@@ -127,9 +130,12 @@
   }
   .faq-box {
     margin: 0px !important;
-    min-width: 400px;
-    padding: 0px 10px;
-    height: 130px;
+    min-width: 290px !important;
+    min-width: initial;
+    padding: 12px 24px;
+    gap: 10px;
+    width: 290px;
+    height: 134px;
     align-self: initial !important;
   }
 
@@ -138,7 +144,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
     overflow-x: auto;
   }
   .faq-box h2 {

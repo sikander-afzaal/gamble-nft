@@ -1,8 +1,22 @@
+import { useLayoutEffect, useRef } from "react";
 import "./styles/Token.css";
+import { gsap, ScrollTrigger } from "gsap/all";
 
 const Token = () => {
+  const section = useRef();
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(section.current, {
+      scrollTrigger: {
+        trigger: section.current,
+        start: "top 40%",
+      },
+      opacity: 1,
+      duration: 2,
+    });
+  }, []);
   return (
-    <div id="token" className="token">
+    <div ref={section} id="token" className="token">
       <h1 className="head head-gr">
         Token <br /> economics
       </h1>

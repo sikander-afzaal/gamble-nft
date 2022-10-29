@@ -1,8 +1,21 @@
 import "./styles/Works.css";
-
+import { gsap, ScrollTrigger } from "gsap/all";
+import { useLayoutEffect, useRef } from "react";
 const Works = () => {
+  const section = useRef();
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(section.current, {
+      scrollTrigger: {
+        trigger: section.current,
+        start: "top 50%",
+      },
+      opacity: 1,
+      duration: 2,
+    });
+  }, []);
   return (
-    <div id="works" className="works">
+    <div ref={section} id="works" className="works">
       <div className="left-works">
         <div className="work-text">
           <div className="left-line"></div>

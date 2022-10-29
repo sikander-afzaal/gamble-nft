@@ -48,7 +48,8 @@ header {
   display: flex;
 }
 .mobile-btn,
-.header-toggle {
+.header-toggle,
+.fabric {
   display: none;
 }
 .overlay {
@@ -57,14 +58,28 @@ header {
 @media screen and (max-width: 1200px) {
   header {
     padding: 20px;
+    justify-content: flex-start;
+  }
+  .fabric {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: block !important;
+    left: 0;
+    mix-blend-mode: screen;
+    z-index: 2;
+    opacity: 0.2;
+    object-fit: cover;
+    transform: rotate(90deg);
   }
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 48;
-    background-color: black;
-    opacity: 0.5;
+    background: rgba(18, 25, 56, 0.4);
+    backdrop-filter: blur(5px);
     width: 100%;
     height: 100vh;
   }
@@ -76,40 +91,74 @@ header {
   }
   .header-toggle {
     display: block;
-    color: white;
-    position: relative;
-    z-index: 50;
+  }
+
+  .menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .menu-top svg {
     font-size: 25px;
     cursor: pointer;
+    color: white;
+    cursor: pointer;
   }
-  .mobile-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+
   .left-header nav {
     top: 0;
-    right: -700px;
+    left: -700px;
+    isolation: isolate;
     z-index: 49;
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    max-width: 400px;
+    gap: 0px;
+    max-width: 310px;
     justify-content: flex-start;
     padding: 0rem 2rem;
-    padding-top: 8rem;
+    padding-top: 30px;
     transition: all 1s ease-in-out;
     align-items: flex-start;
     position: fixed;
-    background: var(--body-gradient);
+    box-shadow: 8px 4px 43px rgba(0, 0, 0, 0.25);
+    background: #121938;
+    backdrop-filter: blur(8px);
   }
   .left-header .open-header {
-    right: 0;
+    left: 0;
   }
-}
-@media screen and (max-width: 433px) {
-  .left-header nav {
-    align-items: center;
-    max-width: 100%;
+  nav .btn-div {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding-top: 25px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+  }
+  nav .btn-div button {
+    width: 100%;
+  }
+
+  .nav-links {
+    padding: 16px 0px;
+  }
+  .active-link {
+    text-decoration: none;
+    position: relative;
+  }
+  .active-link::before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    border-top-right-radius: 100vh;
+    border-bottom-right-radius: 100vh;
+    height: 90%;
+    content: "";
+    background-color: var(--gold);
+    width: 3px;
   }
 }

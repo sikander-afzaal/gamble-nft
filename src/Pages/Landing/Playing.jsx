@@ -1,8 +1,21 @@
 import "./styles/Playing.css";
-
+import { gsap, ScrollTrigger } from "gsap/all";
+import { useLayoutEffect, useRef } from "react";
 const Playing = () => {
+  const section = useRef();
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(section.current, {
+      scrollTrigger: {
+        trigger: section.current,
+        start: "top 50%",
+      },
+      opacity: 1,
+      duration: 2,
+    });
+  }, []);
   return (
-    <div className="playing-cont container">
+    <div ref={section} className="playing-cont container">
       <img src="/playing-coins.png" alt="" className="play-coin" />
       <div className="playing">
         <img src="/hand.png" alt="" />

@@ -5,10 +5,18 @@ import { useLayoutEffect, useRef } from "react";
 const Faq = () => {
   const path = useRef();
   const coin = useRef();
-  // const wrapper = useRef();
+  const section = useRef();
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
-
+    gsap.to(section.current, {
+      scrollTrigger: {
+        trigger: section.current,
+        start: "top 50%",
+        markers: true,
+      },
+      opacity: 1,
+      duration: 2,
+    });
     var myAnim = gsap.timeline({
       defaults: { duration: 2 },
       scrollTrigger: {
@@ -24,7 +32,7 @@ const Faq = () => {
       motionPath: {
         path: path.current,
         align: path.current,
-        autoRotate: true,
+        // autoRotate: true,
         alignOrigin: [0.5, 0.5],
         // end: 3,
         // start: 0,
@@ -32,7 +40,7 @@ const Faq = () => {
     });
   }, []);
   return (
-    <div id="faq" className="container faq-cont">
+    <div ref={section} id="faq" className="container faq-cont">
       <img src="/cube.png" className="cube" alt="" />
       <div className="faq">
         <h1 className="head head-gr">FAQ</h1>
