@@ -3,7 +3,6 @@
   margin-top: 270px;
   position: relative;
   isolation: isolate;
-  z-index: 30;
   opacity: 0;
 }
 .play-coin {

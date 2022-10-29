@@ -125,7 +125,7 @@
     gap: 100px;
     margin-top: 180px;
   }
-  .works > .flex-col-head h1 {
+  .works > .flex-col-head {
     font-size: 60px;
     justify-self: flex-end;
     margin-right: 30px;

@@ -48,6 +48,9 @@
   margin-bottom: 55px;
   font-family: "Neue", sans-serif;
 }
+.left-hero .btn-div {
+  gap: 15px;
+}
 .hero > img {
   width: 400px;
   align-self: flex-end;
@@ -100,6 +103,11 @@
     width: 100%;
     gap: 16px;
     flex-direction: column;
+  }
+  .left-hero-img {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
   }
   .left-hero .btn-div button {
     width: 100%;
@@ -154,10 +162,21 @@
     right: initial;
     top: 30%;
   }
+  .hero {
+    padding-top: 140px;
+  }
   .left-hero > h1 {
     font-size: 24px;
+    margin-bottom: 15px;
   }
   .hero > img {
     width: 160px;
+  }
+  .left-hero .btn-div {
+    gap: 20px;
+  }
+  .left-hero .btn-div button {
+    height: 40px;
+    font-size: 16px;
   }
 }

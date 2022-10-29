@@ -1,12 +1,13 @@
 import "./styles/Faq.css";
 import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 
 const Faq = () => {
   const path = useRef();
   const coin = useRef();
   const section = useRef();
   const head = useRef();
+
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     gsap.to(head.current, {
@@ -17,6 +18,7 @@ const Faq = () => {
       opacity: 1,
       y: 0,
     });
+
     var myAnim = gsap.timeline({
       defaults: { duration: 2 },
       scrollTrigger: {
@@ -27,6 +29,7 @@ const Faq = () => {
         // markers: true,
       },
     });
+
     myAnim.to(coin.current, {
       ease: "none",
       motionPath: {
@@ -70,7 +73,7 @@ const Faq = () => {
           >
             <path
               ref={path}
-              className="cls-1"
+              className="cls-1 path"
               d="M622,12.85,257.84,374a2.06,2.06,0,0,0-.49.78L179.22,605.22a1.94,1.94,0,0,0,0,1.26L239,789.85l15.5,33L495.17,1119a2,2,0,0,1,.42.91l64.74,368a2,2,0,0,0,1,1.43L951.5,1694.85l-2.5,177.5L821.86,2091.72a2,2,0,0,1-1,.88l-289.53,106a2,2,0,0,0-1.13,1.06L418.93,2446.41a2,2,0,0,1-1.45,1.14l-355.72,69a2,2,0,0,0-1.56,1.5L27.5,2653.85l-27,108.5,23,737.85a2,2,0,0,0,1,1.7l344.17,186.51a2,2,0,0,1,1,1.35l94.81,459.09"
             />
             <path

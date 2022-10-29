@@ -71,9 +71,7 @@ const Header = () => {
               F.A.Q
             </Link>
             <div className="btn-div mobile-btn">
-              <button className="cta-btn">
-                <img src="/playing.png" alt="" /> Start Playing
-              </button>
+              <button className="cta-btn">Start Playing</button>
               <button className="inverse gradient-text">Buy MTG</button>
             </div>
           </nav>
