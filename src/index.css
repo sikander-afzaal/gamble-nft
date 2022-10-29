@@ -39,6 +39,7 @@
 }
 .App {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 body {
   background: var(--body-gradient);
