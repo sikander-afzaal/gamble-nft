@@ -8,7 +8,7 @@
   position: absolute;
   right: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 .playing {
   display: flex;
@@ -18,20 +18,20 @@
   max-width: var(--max-width);
   padding-inline: 20px;
   height: 700px;
-  position: relative;
-  z-index: 30;
 }
 .playing > img {
   left: 0;
   position: absolute;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
 }
 .playing-flex {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  position: relative;
+  z-index: 45;
 }
 .playing-flex h1 {
   font-weight: 500;
@@ -66,6 +66,9 @@
   width: 60px;
 }
 @media screen and (max-width: 1200px) {
+  .playing-cont {
+    isolation: initial;
+  }
   .playing {
     position: relative;
     z-index: 30;
