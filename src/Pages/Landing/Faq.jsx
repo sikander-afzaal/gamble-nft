@@ -38,7 +38,7 @@ const Faq = () => {
         // autoRotate: true,
         alignOrigin: [0.5, 0.5],
         // end: 3,
-        // start: 0,
+        start: 0.025,
       },
     });
   }, []);
@@ -46,9 +46,11 @@ const Faq = () => {
     <div ref={section} id="faq" className="container faq-cont">
       <img src="/cube.png" className="cube" alt="" />
       <div className="faq">
-        <h1 ref={head} className="head head-gr">
-          FAQ
-        </h1>
+        <div className="wrapper-h1">
+          <h1 ref={head} className="head head-gr">
+            FAQ
+          </h1>
+        </div>
         <div className="faq-grid">
           <div className="faq-box right-box">
             <h2>Can I change my plan later?</h2>
