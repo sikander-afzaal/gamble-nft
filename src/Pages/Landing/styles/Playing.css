@@ -2,14 +2,13 @@
   background: linear-gradient(154.94deg, #404040 4.18%, #000000 62.21%);
   margin-top: 270px;
   position: relative;
-  isolation: isolate;
   opacity: 0;
 }
 .play-coin {
   position: absolute;
   right: 0;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 .playing {
   display: flex;
@@ -18,13 +17,15 @@
   width: 100%;
   max-width: var(--max-width);
   padding-inline: 20px;
-  position: relative;
   height: 700px;
+  position: relative;
+  z-index: 30;
 }
 .playing > img {
   left: 0;
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
 .playing-flex {
   display: flex;
@@ -63,6 +64,12 @@
   left: 2%;
   transform: translateY(-50%);
   width: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .playing {
+    position: relative;
+    z-index: 30;
+  }
 }
 @media screen and (max-width: 1110px) {
   .playing-cont {

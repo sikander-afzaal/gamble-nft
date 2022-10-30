@@ -1,7 +1,7 @@
 .hero-cont {
   position: relative;
   isolation: isolate;
-  z-index: 40;
+  z-index: 0;
 }
 .left-hero-img {
   z-index: -1;
@@ -124,11 +124,11 @@
   .coin-mob {
     display: block;
     position: absolute;
-    z-index: -1;
   }
   .coin-mob {
     width: 100px;
     top: 200vh;
+    z-index: 22;
     object-fit: contain;
   }
   .svg-mob {
