@@ -44,11 +44,15 @@
   justify-self: flex-start;
   transform: translateX(-30px);
   opacity: 0;
-  margin-top: -140px;
+  margin-top: -400px;
+}
+.token .first img {
+  margin-top: 140px;
 }
 .token .token-div:last-of-type img {
   align-self: flex-start;
   padding-left: 20px;
+  margin-bottom: 100px;
 }
 .token-div {
   display: flex;
@@ -121,12 +125,13 @@
   .token {
     margin-top: 210px;
   }
-  .first img {
+  .token .first img {
     margin-bottom: 50px;
+    margin-top: 0px;
     order: 1;
   }
-  .token-div:last-of-type img {
-    /* margin-bottom: 50px; */
+  .token .token-div:last-of-type img {
+    margin-bottom: 0px;
     order: 2;
   }
   .first .token-row {
