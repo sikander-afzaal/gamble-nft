@@ -13,7 +13,6 @@ const Header = () => {
         <div className="left-header">
           <img src="/logo.svg" alt="" className="desktop-btn" />
           <nav className={headerToggle ? "open-header" : ""}>
-            <img src="/fabric.png" alt="" className="fabric" />
             <div className="menu-top mobile-btn">
               <img src="/logo.svg" alt="" />
               <FontAwesomeIcon
