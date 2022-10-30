@@ -36,7 +36,6 @@ const Hero = () => {
     <div id="hero" className="container hero-cont">
       <svg
         width="254"
-        height="2383"
         viewBox="0 0 254 2383"
         fill="none"
         className="svg-mob"
