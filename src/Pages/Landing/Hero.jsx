@@ -38,6 +38,7 @@ const Hero = () => {
         width="254"
         viewBox="0 0 254 2383"
         fill="none"
+        preserveAspectRatio="none"
         className="svg-mob"
         xmlns="http://www.w3.org/2000/svg"
       >
