@@ -153,26 +153,26 @@
   }
   .svg-mob {
     left: 30% !important;
-    height: 3700px;
+    height: 3450px;
     top: 50%;
     z-index: 21;
   }
 }
 @media screen and (max-width: 1105px) {
   .svg-mob {
-    height: 3250px;
+    height: 3050px;
   }
 }
 @media screen and (max-width: 965px) {
   .svg-mob {
-    height: 3050px;
+    height: 2950px;
     left: 20% !important;
   }
 }
 
 @media screen and (max-width: 680px) {
   .svg-mob {
-    height: 2950px;
+    height: 2800px;
     left: 15% !important;
   }
 }
@@ -193,7 +193,7 @@
   .svg-mob {
     top: 47%;
     left: 0 !important;
-    height: 2650px;
+    height: 2550px;
     left: -10% !important;
   }
 }
