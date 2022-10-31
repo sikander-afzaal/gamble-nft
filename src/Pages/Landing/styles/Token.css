@@ -2,7 +2,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
+  row-gap: 180px;
   margin-top: 200px;
   max-width: var(--max-width);
   padding-inline: 20px;
@@ -18,38 +19,46 @@
 .flex-col-head {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  grid-column: 1/3;
+  width: 100%;
+  grid-row: 1/2;
 }
 .token > .flex-col-head h1 {
   transform: translateX(-30px);
   font-weight: 500;
   font-size: 89px;
-  text-align: left;
+  text-align: center;
   opacity: 0;
 }
 
 .token .first {
   align-self: flex-end;
-  margin-top: 100px;
   transform: translateX(30px);
   opacity: 0;
   justify-self: flex-end;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  position: relative;
 }
 .token .token-div:last-of-type {
   align-self: flex-start;
   justify-self: flex-start;
   transform: translateX(-30px);
   opacity: 0;
-  margin-top: -420px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  position: relative;
 }
 .token .first img {
-  margin-top: 140px;
+  margin-top: -20px;
+  align-self: center;
 }
 .token .token-div:last-of-type img {
-  align-self: flex-start;
-  padding-left: 20px;
-  margin-bottom: 70px;
+  top: -20%;
+  left: 50%;
+  position: absolute;
 }
 .token-div {
   display: flex;
@@ -92,6 +101,11 @@
   .desktop-img {
     display: none;
   }
+  .token {
+    row-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
   .token .first {
     grid-row: 2/4;
     grid-column: 2/3;
@@ -108,8 +122,13 @@
   .first .token-row {
     align-items: flex-end;
   }
+  .token .flex-col-head {
+    align-items: flex-start;
+  }
   .token > .flex-col-head h1 {
     font-size: 32px;
+    width: min-content;
+    text-align: left;
   }
   .token-row h2 {
     font-size: 18px;
@@ -130,6 +149,9 @@
   .token .token-div:last-of-type img {
     margin-bottom: 0px;
     order: 2;
+    position: static;
+    padding-left: 20px;
+    align-self: flex-start;
   }
   .first .token-row {
     order: 2;

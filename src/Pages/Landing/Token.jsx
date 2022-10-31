@@ -24,11 +24,8 @@ const Token = () => {
     <div ref={section} id="token" className="token">
       <div className="flex-col-head">
         <h1 className="head head-gr" ref={head1}>
-          Token
+          Token economics
         </h1>{" "}
-        <h1 className="head head-gr" ref={head2}>
-          economics
-        </h1>
       </div>
       <div ref={first} className="token-div first">
         <div className="token-row">
