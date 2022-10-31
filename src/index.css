@@ -74,7 +74,7 @@ body {
   border-image-slice: 1;
   border-width: 2px;
   cursor: pointer;
-  background-color: transparent;
+  background: var(--body-gradient);
   font-weight: 500;
   font-size: 21px;
   color: var(--gold);
@@ -100,6 +100,7 @@ body {
 }
 .inverse:hover {
   color: black;
+  background: transparent;
 }
 
 .cta-btn {
