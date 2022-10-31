@@ -27,7 +27,7 @@ const Hero = () => {
         align: path.current,
         // autoRotate: true,
         alignOrigin: [0.5, 0.5],
-        // end: 3,
+        end: 0.99,
         // start: 0,
       },
     });
