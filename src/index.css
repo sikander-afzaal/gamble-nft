@@ -77,7 +77,16 @@ body {
   background-color: transparent;
   font-weight: 500;
   font-size: 21px;
+  transition: all 0.5s ease-in-out;
   border-image-source: var(--gradient);
+}
+.inverse:hover {
+  background: var(--gradient);
+  color: black;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  text-fill-color: intial;
 }
 .cta-btn {
   width: 200px;
@@ -86,12 +95,23 @@ body {
   background: var(--gradient);
   font-weight: 500;
   font-size: 21px;
+
   color: black;
-  border: none;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  border-image-source: var(--gradient);
+}
+.cta-btn:hover {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .cls-1,
 .cls-2 {

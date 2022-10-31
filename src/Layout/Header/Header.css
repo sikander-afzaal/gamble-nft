@@ -38,7 +38,8 @@ header {
   cursor: pointer;
   text-decoration: none;
 }
-.active-link {
+.active-link,
+.nav-links:hover {
   opacity: 1;
   color: var(--gold);
   text-decoration: underline;

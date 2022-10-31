@@ -38,7 +38,7 @@ const Faq = () => {
         // autoRotate: true,
         alignOrigin: [0.5, 0.5],
         // end: 3,
-        start: 0.025,
+        start: -0.025,
       },
     });
   }, []);

@@ -1,7 +1,7 @@
 .hero-cont {
   position: relative;
   isolation: isolate;
-  z-index: 0;
+  z-index: 35;
 }
 .left-hero-img {
   z-index: -1;
@@ -35,6 +35,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  position: relative;
+  z-index: 35;
   gap: 0px;
 }
 .left-hero > h1 {
@@ -46,7 +48,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   font-family: "Neue", sans-serif;
 }
 .left-hero .btn-div {
@@ -68,11 +70,29 @@
   flex-direction: column;
   gap: 10px;
 }
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
 .scroll-cont p {
   color: white;
   opacity: 0.4;
   font-size: 14px;
   font-weight: 400;
+}
+.scroll-cont img {
+  animation: bounce 2s ease infinite;
 }
 .svg-mob,
 .coin-mob {
