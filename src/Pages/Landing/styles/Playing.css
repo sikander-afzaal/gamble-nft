@@ -17,6 +17,7 @@
   width: 100%;
   max-width: var(--max-width);
   padding-inline: 20px;
+  position: relative;
   height: 700px;
 }
 .playing > img {
