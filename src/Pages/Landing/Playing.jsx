@@ -29,7 +29,7 @@ const Playing = () => {
             <button className="cta-btn">
               Start Playing <img src="/play.png" alt="" />
             </button>
-            <button className="inverse gradient-text">Buy MTG</button>
+            <button className="inverse">Buy MTG</button>
           </div>
         </div>
       </div>

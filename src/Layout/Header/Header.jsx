@@ -71,7 +71,7 @@ const Header = () => {
             </Link>
             <div className="btn-div mobile-btn">
               <button className="cta-btn">Start Playing</button>
-              <button className="inverse gradient-text">Buy MTG</button>
+              <button className="inverse">Buy MTG</button>
             </div>
           </nav>
         </div>
@@ -88,7 +88,7 @@ const Header = () => {
           className="header-toggle"
         />
         <div className="btn-div desktop-btn">
-          <button className="inverse gradient-text">Buy MTG</button>
+          <button className="inverse">Buy MTG</button>
           <button className="cta-btn">
             Start Playing <img src="/arrow.svg" alt="" />
           </button>

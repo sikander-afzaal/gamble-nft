@@ -77,34 +77,65 @@ body {
   background-color: transparent;
   font-weight: 500;
   font-size: 21px;
+  color: var(--gold);
   transition: all 0.5s ease-in-out;
+  position: relative;
   border-image-source: var(--gradient);
 }
-.inverse:hover {
+.inverse::before {
+  content: "";
   background: var(--gradient);
-  color: black;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-  background-clip: initial;
-  text-fill-color: intial;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
 }
+.inverse:hover::before {
+  opacity: 1;
+}
+.inverse:hover {
+  color: black;
+}
+
 .cta-btn {
   width: 200px;
   cursor: pointer;
   height: 58px;
-  background: var(--gradient);
   font-weight: 500;
   font-size: 21px;
-
+  position: relative;
   color: black;
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  background-color: transparent;
+  isolation: isolate;
   border-image-source: var(--gradient);
+}
+.cta-btn::before {
+  content: "";
+  background: var(--gradient);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  z-index: -1;
+  opacity: 1;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+.cta-btn:hover::before {
+  opacity: 0;
 }
 .cta-btn:hover {
   background: var(--gradient);
@@ -113,6 +144,7 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
+
 .cls-1,
 .cls-2 {
   fill: none;

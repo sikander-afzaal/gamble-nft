@@ -19,10 +19,13 @@
 .flex-col-head {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+}
+.token .flex-col-head {
   grid-column: 1/3;
   width: 100%;
+  align-items: center;
   grid-row: 1/2;
 }
 .token > .flex-col-head h1 {

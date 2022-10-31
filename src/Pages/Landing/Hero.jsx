@@ -67,7 +67,7 @@ const Hero = () => {
           <h1 className="head head-gr"></h1>
           <div className="btn-div">
             <button className="cta-btn">Get Start</button>
-            <button className="inverse gradient-text">Buy MTG</button>
+            <button className="inverse ">Buy MTG</button>
           </div>
         </div>
         <img src="/hero-coin.png" alt="" />
