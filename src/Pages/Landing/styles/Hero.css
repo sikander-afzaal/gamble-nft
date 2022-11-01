@@ -40,7 +40,7 @@
   gap: 0px;
 }
 .left-hero > h1 {
-  max-width: 800px;
+  max-width: 750px;
   font-weight: 500;
   font-size: 62px;
   background: var(--text-gradient);

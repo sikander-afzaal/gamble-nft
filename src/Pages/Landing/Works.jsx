@@ -25,7 +25,7 @@ const Works = () => {
           <div className="left-line"></div>
           <div className="bottom-line"></div>
           <h1>1.</h1>
-          <p>Swap or transact tokens to participate in the lottery.</p>
+          <p>Swap or transact tokens to automatically participate</p>
         </div>
         <div className="work-text">
           <div className="long-line"></div>
@@ -37,14 +37,17 @@ const Works = () => {
         <div className="work-text">
           <div className="long-line-right"></div>
           <div className="left-line"></div>
-          <div className="bottom-line"></div>
+          <div className="bottom-line longer"></div>
           <h1>3.</h1>
           <p>Each week 10 wallet will receive the pot split equally.</p>
         </div>
         <div className="work-text">
           <div className="long-line"></div>
           <h1>4.</h1>
-          <p>You win 1 ticket for each token sent to the pot.</p>
+          <p>
+            increase your chances by generating a bigger token volume (Swaps,
+            Transactions)
+          </p>
         </div>
       </div>
       <div className="flex-col-head">

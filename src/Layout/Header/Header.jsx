@@ -70,7 +70,7 @@ const Header = () => {
               F.A.Q
             </Link>
             <div className="btn-div mobile-btn">
-              <button className="cta-btn">Start Playing</button>
+              <button className="cta-btn">Air Drop</button>
               <button className="inverse">Buy MTG</button>
             </div>
           </nav>
@@ -89,9 +89,7 @@ const Header = () => {
         />
         <div className="btn-div desktop-btn">
           <button className="inverse">Buy MTG</button>
-          <button className="cta-btn">
-            Start Playing <img src="/arrow.svg" alt="" />
-          </button>
+          <button className="cta-btn">Air Drop</button>
         </div>
       </header>
     </div>

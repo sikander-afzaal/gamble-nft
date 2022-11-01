@@ -53,18 +53,21 @@ const Faq = () => {
         </div>
         <div className="faq-grid">
           <div className="faq-box right-box">
-            <h2>Can I change my plan later?</h2>
+            <h2>How can I join the lottery?</h2>
             <p>
-              Ofcourse. Our pricing scales with your company. Chat to our
-              friendly team to find a solution that works for you.
+              Everyone automatically joins the weekly lottery if he/she makes
+              any transaction within that week
             </p>
             <img src="/faq1.png" alt="" />
           </div>
           <div className="faq-box left-box">
-            <h2>Is there a free trial available?</h2>
+            <h2>How can I participate in the MTG Airdrop?</h2>
             <p>
-              Yes, you can try us for free for 30 days. Our friendly team will
-              work with you to get you up and running as soon as possible.
+              Anyone can participate for free in the $MTG token airdrop, head to
+              this link and perform various tasks that will boost your score.
+              The top 1,000 community members will receive the free airdrop !
+              Read more about this topic in the Detailed Article: (Link soon
+              Tomek Writing)
             </p>
             <img src="/faq2.png" alt="" />
           </div>
@@ -89,18 +92,18 @@ const Faq = () => {
           </svg>
           <img ref={coin} src="/coin.png" alt="" className="coin" />
           <div className="faq-box right-box">
-            <h2>Can other info be added to an invoice?</h2>
+            <h2>How can I boost my lottery-winning chances?</h2>
             <p>
-              At the moment, the only way to add additional information to
-              invoices is to add the information to the workspace's name.
+              You can improve your chances by generating a bigger on-chain token
+              volume. By selling, buying, or wallet-to-wallet transactions!
             </p>
             <img src="/faq3.png" alt="" />
           </div>
           <div className="faq-box left-box">
-            <h2>What is your cancellation policy?</h2>
+            <h2>What are the transaction fees</h2>
             <p>
-              We understand that things change. You can cancel your plan at any
-              time and we’ll refund you the difference already paid.
+              1% of tokens from txd are getting burned 1% of tokens are sent to
+              the weekly lottery pot
             </p>
             <img src="/faq4.png" alt="" />
           </div>

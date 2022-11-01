@@ -3,7 +3,6 @@ import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
 import { useLayoutEffect, useRef } from "react";
 
 const Hero = () => {
-  const TYPED__HEADING = `World's first net deflationary & highly profitable move to earn coin!`;
   const path = useRef();
   const coin = useRef();
   // const wrapper = useRef();
@@ -63,7 +62,7 @@ const Hero = () => {
       <img src="/hero-main.png" className="center-hero" alt="" />
       <div className="hero">
         <div className="left-hero">
-          <h1>{TYPED__HEADING}</h1>
+          <h1>Unique game theory token with a highly deflationary mechanism</h1>
           <h1 className="head head-gr"></h1>
           <div className="btn-div">
             <button className="cta-btn">Get Start</button>

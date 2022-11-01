@@ -32,11 +32,12 @@
   position: relative;
   align-items: center;
   min-width: 416px;
-  max-width: 440px;
+  max-width: 450px;
   background: #273258;
   border-radius: 12px;
   color: white;
-  padding: 24px 24px;
+  padding: 24px;
+  height: max-content;
 }
 .work-text h1 {
   font-weight: 700;
@@ -81,7 +82,7 @@
   right: calc(100% + 18px);
   opacity: 0.3;
   width: 1px;
-  height: calc(100% + 60px);
+  height: calc(100% + 90px);
 }
 .right-bottom-line {
   right: initial;
@@ -94,9 +95,12 @@
   position: absolute;
   top: 50%;
   right: calc(100%);
-  width: 172px;
+  width: 162px;
   opacity: 0.3;
   height: 1px;
+}
+.longer {
+  height: calc(100% + 105px);
 }
 .long-line-right {
   right: initial;
@@ -116,7 +120,7 @@
   }
   .long-line,
   .long-line-right {
-    width: 190px;
+    width: 180px;
   }
   .bottom-line,
   .right-bottom-line {
