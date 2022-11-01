@@ -1,8 +1,14 @@
 import "./styles/Faq.css";
 import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Faq = () => {
+  const [openFaq1, setOpenFaq1] = useState(false);
+  const [openFaq2, setOpenFaq2] = useState(false);
+  const [openFaq3, setOpenFaq3] = useState(false);
+  const [openFaq4, setOpenFaq4] = useState(false);
   const path = useRef();
   const coin = useRef();
   const section = useRef();
@@ -53,16 +59,28 @@ const Faq = () => {
         </div>
         <div className="faq-grid">
           <div className="faq-box right-box">
-            <h2>How can I join the lottery?</h2>
-            <p>
+            <h2 onClick={() => setOpenFaq1((prev) => !prev)}>
+              How can I join the lottery?{" "}
+              <FontAwesomeIcon
+                className={`${openFaq1 ? "rotate" : ""}`}
+                icon={faChevronDown}
+              />
+            </h2>
+            <p className={`${openFaq1 ? "active-faq" : ""}`}>
               Everyone automatically joins the weekly lottery if he/she makes
               any transaction within that week
             </p>
             <img src="/faq1.png" alt="" />
           </div>
           <div className="faq-box left-box">
-            <h2>How can I participate in the MTG Airdrop?</h2>
-            <p>
+            <h2 onClick={() => setOpenFaq2((prev) => !prev)}>
+              How can I participate in the MTG Airdrop?{" "}
+              <FontAwesomeIcon
+                className={`${openFaq2 ? "rotate" : ""}`}
+                icon={faChevronDown}
+              />
+            </h2>
+            <p className={`${openFaq2 ? "active-faq" : ""}`}>
               Anyone can participate for free in the $MTG token airdrop, head to
               this link and perform various tasks that will boost your score.
               The top 1,000 community members will receive the free airdrop !
@@ -92,16 +110,28 @@ const Faq = () => {
           </svg>
           <img ref={coin} src="/coin.png" alt="" className="coin" />
           <div className="faq-box right-box">
-            <h2>How can I boost my lottery-winning chances?</h2>
-            <p>
+            <h2 onClick={() => setOpenFaq3((prev) => !prev)}>
+              How can I boost my lottery-winning chances?{" "}
+              <FontAwesomeIcon
+                className={`${openFaq3 ? "rotate" : ""}`}
+                icon={faChevronDown}
+              />
+            </h2>
+            <p className={`${openFaq3 ? "active-faq" : ""}`}>
               You can improve your chances by generating a bigger on-chain token
               volume. By selling, buying, or wallet-to-wallet transactions!
             </p>
             <img src="/faq3.png" alt="" />
           </div>
           <div className="faq-box left-box">
-            <h2>What are the transaction fees</h2>
-            <p>
+            <h2 onClick={() => setOpenFaq4((prev) => !prev)}>
+              What are the transaction fees{" "}
+              <FontAwesomeIcon
+                className={`${openFaq4 ? "rotate" : ""}`}
+                icon={faChevronDown}
+              />
+            </h2>
+            <p className={`${openFaq4 ? "active-faq" : ""}`}>
               1% of tokens from txd are getting burned 1% of tokens are sent to
               the weekly lottery pot
             </p>
