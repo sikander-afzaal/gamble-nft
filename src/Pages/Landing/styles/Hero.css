@@ -165,27 +165,27 @@
 }
 @media screen and (max-width: 965px) {
   .svg-mob {
-    height: 2400px;
+    height: 2050px;
     left: 20% !important;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 685px) {
   .svg-mob {
-    height: 2300px;
+    height: 1950px;
     left: 15% !important;
   }
 }
 @media screen and (max-width: 630px) {
   .svg-mob {
-    height: 2400px;
+    height: 2100px;
     /* left: 5% !important; */
     /* top: 48%; */
   }
 }
 @media screen and (max-width: 580px) {
   .svg-mob {
-    height: 2150px;
+    height: 1830px;
     left: 0 !important;
   }
 }
@@ -194,13 +194,13 @@
   .svg-mob {
     top: 47%;
     left: 0 !important;
-    height: 2020px;
-    left: -5% !important;
+    height: 1700px;
+    left: 0% !important;
   }
 }
 @media screen and (max-width: 450px) {
   .svg-mob {
-    height: 2100px;
+    height: 1800px;
   }
 }
 @media screen and (max-width: 691px) {
