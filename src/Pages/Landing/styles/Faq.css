@@ -129,9 +129,6 @@
   z-index: 30;
   transform: translateX(-50%);
 }
-.faq-box h2 svg {
-  display: none;
-}
 @media screen and (max-width: 1491px) {
   .faq-box {
     min-width: initial !important;
@@ -142,16 +139,13 @@
     width: 82%;
   }
 }
-
 @media screen and (max-width: 1200px) {
   .coin,
   .svg {
     display: none;
   }
-  .faq-box h2 svg {
-    display: block;
-    transition: all 0.3s linear;
-  }
+}
+@media screen and (max-width: 1200px) {
   .faq-box img {
     display: none;
   }
@@ -163,13 +157,12 @@
   }
   .faq-box {
     margin: 0px !important;
-    min-width: 100% !important;
+    min-width: 300px !important;
+    min-width: initial;
+    padding: 12px 24px;
     gap: 10px;
-    padding: 0px;
     width: 300px;
     height: auto;
-    overflow: hidden;
-    gap: 0px;
     align-self: initial !important;
   }
 
@@ -177,32 +170,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    flex-direction: column;
     width: 100%;
     gap: 20px;
     overflow-x: auto;
   }
   .faq-box h2 {
     font-size: 18px;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 24px;
   }
   .faq-box p {
-    max-height: 0px;
     font-size: 14px;
-    transition: all 0.3s ease-in-out;
-    padding-inline: 24px;
-  }
-  .faq-box .active-faq {
-    max-height: 3000px;
-    padding-bottom: 18px;
-  }
-  .rotate {
-    transform: rotate(-180deg);
   }
   .faq {
     /* margin-top: 100px; */
