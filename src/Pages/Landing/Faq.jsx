@@ -24,7 +24,7 @@ const Faq = () => {
       scrollTrigger: {
         trigger: path.current,
         scrub: 2,
-        start: "top 15%",
+        start: "top 60%",
         end: "bottom bottom",
         // markers: true,
       },

@@ -153,48 +153,54 @@
   }
   .svg-mob {
     left: 30% !important;
-    height: 3450px;
+    height: 3150px;
     top: 50%;
     z-index: 21;
   }
 }
 @media screen and (max-width: 1105px) {
   .svg-mob {
-    height: 3050px;
+    height: 2500px;
   }
 }
 @media screen and (max-width: 965px) {
   .svg-mob {
-    height: 2950px;
+    height: 2400px;
     left: 20% !important;
   }
 }
 
 @media screen and (max-width: 680px) {
   .svg-mob {
-    height: 2800px;
+    height: 2300px;
     left: 15% !important;
+  }
+}
+@media screen and (max-width: 630px) {
+  .svg-mob {
+    height: 2400px;
+    /* left: 5% !important; */
+    /* top: 48%; */
   }
 }
 @media screen and (max-width: 580px) {
   .svg-mob {
-    height: 2650px;
+    height: 2150px;
     left: 0 !important;
   }
 }
+
 @media screen and (max-width: 500px) {
-  .svg-mob {
-    height: 2500px;
-    /* left: 5% !important; */
-    top: 48%;
-  }
-}
-@media screen and (max-width: 400px) {
   .svg-mob {
     top: 47%;
     left: 0 !important;
-    height: 2500px;
-    left: -10% !important;
+    height: 2020px;
+    left: -5% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .svg-mob {
+    height: 2100px;
   }
 }
 @media screen and (max-width: 691px) {

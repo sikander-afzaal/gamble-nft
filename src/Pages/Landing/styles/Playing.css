@@ -74,11 +74,11 @@
     position: relative;
     z-index: 30;
   }
+  .playing-cont {
+    margin-top: 160px;
+  }
 }
 @media screen and (max-width: 1110px) {
-  .playing-cont {
-    margin-top: 230px;
-  }
   .playing > img {
     display: none;
   }

@@ -65,7 +65,7 @@ const Hero = () => {
           <h1>Unique game theory token with a highly deflationary mechanism</h1>
           <h1 className="head head-gr"></h1>
           <div className="btn-div">
-            <button className="cta-btn">Get Start</button>
+            <button className="cta-btn">Air Drop</button>
             <button className="inverse ">Buy MTG</button>
           </div>
         </div>

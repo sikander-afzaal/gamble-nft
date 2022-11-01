@@ -40,7 +40,7 @@ const Header = () => {
               activeClass="active-link"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={-100}
               duration={500}
             >
               Token economics
@@ -50,7 +50,7 @@ const Header = () => {
               to="works"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-100}
               duration={500}
               className="nav-links"
               activeClass="active-link"

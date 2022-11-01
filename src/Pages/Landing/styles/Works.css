@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   max-width: var(--max-width);
-  margin-top: 280px;
+  margin-top: 200px;
   z-index: 30;
   padding-inline: 20px;
   overflow-x: hidden;
@@ -131,7 +131,7 @@
   .works {
     grid-template-columns: 1fr;
     gap: 100px;
-    margin-top: 138px;
+    margin-top: 0px;
   }
   .works > .flex-col-head {
     font-size: 60px;
