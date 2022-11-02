@@ -156,3 +156,22 @@ body {
 .cls-1 {
   stroke-dasharray: 9 9;
 }
+@media screen and (max-width: 1200px) {
+  .cta-btn:hover {
+    background: var(--gradient);
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    text-fill-color: intial;
+  }
+  .cta-btn:hover::before {
+    opacity: 1;
+  }
+  .inverse:hover::before {
+    opacity: 0;
+  }
+  .inverse:hover {
+    color: var(--gold);
+    background: var(--body-gradient);
+  }
+}
