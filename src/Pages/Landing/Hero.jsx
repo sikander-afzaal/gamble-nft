@@ -24,10 +24,9 @@ const Hero = () => {
       motionPath: {
         path: path.current,
         align: path.current,
-        // autoRotate: true,
         alignOrigin: [0.5, 0.5],
         end: 0.99,
-        // start: 0,
+        start: -0.025,
       },
     });
   }, []);
