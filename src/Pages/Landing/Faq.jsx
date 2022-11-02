@@ -30,9 +30,9 @@ const Faq = () => {
       scrollTrigger: {
         trigger: path.current,
         scrub: 2,
-        start: "top 50%",
+        start: "top 40%",
         end: "bottom bottom",
-        // markers: true,
+        markers: true,
       },
     });
 
