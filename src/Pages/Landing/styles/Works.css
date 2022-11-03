@@ -95,16 +95,17 @@
   position: absolute;
   top: 50%;
   right: calc(100%);
-  width: 162px;
+  width: 118px;
   opacity: 0.3;
   height: 1px;
 }
 .longer {
-  height: calc(100% + 105px);
+  height: calc(100% + 104px);
 }
 .long-line-right {
   right: initial;
   left: 100%;
+  width: 161px;
 }
 @media screen and (max-width: 1373px) {
   .works {
